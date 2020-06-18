@@ -1,0 +1,226 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #26292c;
+}
+
+.dropdown-content * {
+  color: #d5d5d5;
+  font-family: "Open Sans", sans-serif;
+  font-size: 10pt;
+  font-weight: 500;
+  padding: 9px 14px;
+  text-decoration: none;
+}
+
+nav *:focus,
+#subnav *:focus {
+  outline: 0 !important;
+}
+
+.navbtn {
+  background-color: #171a1c;
+  color: #9ca2ab;
+}
+
+.subbtn {
+  background-color: #1c1f22;
+  color: #9ca2ab;
+}
+
+.navbtn,
+.subbtn {
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  font-size: 10pt;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  padding: 5px 7px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 5px;
+}
+
+.account span {
+  color: #9ca2ab;
+  -webkit-transition: color 0.2s ease;
+  -moz-transition: color 0.2s ease;
+  -o-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+  padding: 10px 5px 10px 5px;
+  font-size: 10pt;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  cursor: default;
+}
+
+.clock {
+  color: #9ca2ab;
+  padding: 5px;
+  font-size: 10pt;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  cursor: default;
+  border: 1px solid #9ca2ab;
+  border-radius: 5px;
+}
+
+.account {
+  background-color: #171a1c;
+  border-radius: 5px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  padding: 10px 3px 10px 0;
+  margin-left: 4px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #26292c;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.account .dropdown-content {
+  top: 42px;
+  right: 10px;
+}
+
+.dropdown-content a:hover {
+  background-color: #2f3337;
+}
+
+.account.dropon .dropdown-content {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: flex-start;
+  align-items: left;
+}
+
+.account.dropon {
+  border-radius: 5px 5px 0 0;
+}
+
+.navitem:hover .navbtn,
+.navitem:hover .subbtn,
+.selsubpage,
+.account:hover,
+.selpage {
+  background-color: #26292c;
+  color: #d5d5d5;
+}
+
+.selsubpage {
+  padding-bottom: 15px;
+  margin-top: 10px;
+  border-radius: 5px 5px 0 0;
+}
+
+.account:hover span {
+  color: #d5d5d5;
+}
+
+.account .dropdown-content span {
+  padding: 9px 14px;
+}
+
+#logo {
+  height: 20px;
+  margin: 0 20px 0 10px;
+  cursor: pointer;
+  filter: grayscale(100%) brightness(200%);
+}
+
+.avatar {
+  height: 20px;
+  width: 20px;
+  margin: 0 2px -5px 10px;
+  background-color: white;
+}
+
+nav,
+#subnav,
+#subcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #171a1c;
+}
+
+nav {
+  height: 40px;
+  padding: 4px 10px;
+}
+
+#subnav {
+  position: absolute;
+  width: 100%;
+  top: 48px;
+  justify-content: space-between;
+  background-color: #1c1f22;
+  height: 35px;
+  padding: 5px 0;
+  overflow: hidden;
+  -webkit-transition: top 0.2s ease;
+  -moz-transition: top 0.2s ease;
+  -o-transition: top 0.2s ease;
+  transition: top 0.2s ease;
+  z-index: -1;
+}
+
+#subnav.nosub {
+  top: 0;
+
+}
+
+#subcontainer {
+  padding: 0 0 0 10px;
+  background-color: #1c1f22;
+}
+
+.navitem {
+  border-radius: 5px 5px 0 0;
+  margin: 0 3px 0 3px;
+}
+
+.sep {
+  width: 1px;
+  height: 30px;
+  background-color: #a7a7a7;
+}
+
+.spacediv {
+  flex-grow: 1;
+}
+
+.smallspacediv {
+  width: 8px;
+}
+
+#main {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  top: 120px;
+}
+
+#main h1 {
+  color: #d5d5d5;
+  font-size: 19pt;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  width: 100%;
+  text-align: center;
+}
